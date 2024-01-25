@@ -19,8 +19,16 @@
         <td th:text="${event.name}"></td>
         <td th:text="${event.description}"></td>
         <td th:text="${event.contactEmail}"></td>
+
+        <td>
+            <a th:href="@{/events/edit/{id}(id=${event.id})}">Edit</a>
+        </td>
     </tr>
 </table>
+
+<!--events.put("Menteaship","A fun meetup for connecting with mentors");-->
+<!--events.put("Code With Pride","A fun meetup sponsored by LaunchCode");-->
+<!--events.put("Javascripty", "An imaginary meetup for Javascript developers");-->
 
 </body>
 </html>
